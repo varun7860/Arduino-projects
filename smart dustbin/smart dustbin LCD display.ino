@@ -1,11 +1,11 @@
 #include <LiquidCrystal.h> 
-int Contrast=75;
+int Contrast=75; //set the contrast for lcd 
  LiquidCrystal lcd(12, 11, 5, 4, 3, 2);  
 
  void setup()
  {
-    analogWrite(6,Contrast);
-     lcd.begin(16, 2);
+    analogWrite(6,Contrast); // contast value 75b is stored in variable 'contrast'
+     lcd.begin(16, 2);  // Because LCD is 16x2
   } 
      void loop()
  { 
