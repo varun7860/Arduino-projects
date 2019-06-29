@@ -1,9 +1,9 @@
 int trigPin = 8;
 int echoPin = 7;
-int revright = 4;      //REVerse motion of Right motor
+int revright = 4;      //Reverse motion of Right motor
 int fwdleft = 5;      
 int revleft= 6;       
-int fwdright= 3;       //ForWarD motion of Right motor
+int fwdright= 3;       //Forward motion of Right motor
 int c = 0;
 
 void setup() {
@@ -18,7 +18,8 @@ void setup() {
 
 }
 
-void loop() {
+void loop() 
+{
   long duration, distance;
   digitalWrite(trigPin,HIGH);
   delayMicroseconds(1000);
