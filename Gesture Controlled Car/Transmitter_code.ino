@@ -1,10 +1,10 @@
-#include <RH_ASK.h>
+#include <RH_ASK.h> //Radio head ASK Library
 #include <SPI.h>
 #include <Wire.h>       //For communicate
 #include <I2C.h>     //For communicate with MPU6050
 #include <MPU6050.h>  //The main library of the MPU6050
 
-RH_ASK rf_driver;  //Radio head ASK Library
+RH_ASK rf_driver; 
 MPU6050 mpu;       // Instance of MPU6050
 int16_t ax, ay, az;
 int16_t gx, gy, gz;
