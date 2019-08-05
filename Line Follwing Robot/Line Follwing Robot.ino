@@ -1,4 +1,4 @@
-/*line fowllowing Robot using arduino pro mini. You can use any Arduino want ..change the pins accordingly. 
+/*line following Robot using arduino pro mini. You can use any Arduino want ..change the pins accordingly. 
  Note :Also use PWM(Pulse width Modulation) pins( for my Pro mini its 9 and 10) on Arduino  for ENA AND ENB pins.*/
 
 int IR1 = 7;
