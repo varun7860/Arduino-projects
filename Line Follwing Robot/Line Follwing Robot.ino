@@ -1,6 +1,8 @@
+/*line fowllowing Robot using arduino pro mini. You can use any Arduino want ..change the pins accordingly. 
+ Note :Also use PWM(Pulse width Modulation) pins( for my Pro mini its 9 and 10) on Arduino  for ENA AND ENB pins.*/
+
 int IR1 = 7;
 int IR2 = 8;
-int Led = 13;
 int M1 = 2;
 int M2 = 3;
 int M3 = 4;
@@ -10,13 +12,13 @@ int ENB = 10;
 
 void setup()
 {
- pinMode(7, INPUT);
+ pinMode(7, INPUT); // your IR sensors will be used as Input
  pinMode(11, INPUT);
- pinMode(M1, OUTPUT);
+ pinMode(M1, OUTPUT); // Motors will the Output
  pinMode(M2, OUTPUT);
  pinMode(M3, OUTPUT);
  pinMode(M4, OUTPUT);
- //pinMode(ENA, OUTPUT);
+ //pinMode(ENA, OUTPUT); //optional: Mention this if you want to control speed of the Motors.
  //pinMode(ENB, OUTPUT);
 }
 
@@ -63,10 +65,10 @@ void left()
 
 void loop()
 {
-  int detect1 = digitalRead(7);
+  int detect1 = digitalRead(7); // Read the Status Of Pins
   int detect2 = digitalRead(11);
 
-  if(detect1==LOW && detect2==LOW)
+  if(detect1==LOW && detect2==LOW) // For IR sensor, LOW means high and HIGH means low
   {
    
     forward();
