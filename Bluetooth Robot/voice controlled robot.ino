@@ -7,8 +7,7 @@ value to driver the motor  */
 #include<Servo.h>
 #include <SoftwareSerial.h>
 String voice;
-Servo myServo;
-//char data = 0;  //Variable for storing received data  
+Servo myServo; 
 int TxD = 0;
 int RxD = 1;  
 SoftwareSerial bluetooth(TxD,RxD); //TX, RX respetively        
@@ -19,7 +18,6 @@ int motorPin4 = 6;
 int servoPin = 7;
 int ENA1 = 9;
 int ENA2 = 10;
-//int pos = 0;
 
 void setup() 
 {
@@ -113,13 +111,13 @@ void loop()
 {
   while (Serial.available())//Check if there is an available byte to read
   { 
-     delay(10); //Delay added to make thing stable 
-    char c = Serial.read(); //Conduct a serial read
+     delay(10);  //Delay added to make thing stable 
+    char c = Serial.read();  //Conduct a serial read
     if (c == '#') 
     {
       break; //Exit the loop when the # is detected after the word
     } 
-    voice += c; //Shorthand for voice = voice + c
+    voice += c; 
   }
   
   if(voice.length()>0)
