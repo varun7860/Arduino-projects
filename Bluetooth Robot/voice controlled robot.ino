@@ -1,6 +1,6 @@
 /*setting pwm of the motor to 255
 we can change the speed of rotaion
-by chaning pwm input but we are only
+by changing pwm input but we are only
 using arduino so we are using higest
 value to driver the motor  */
 
