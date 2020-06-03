@@ -14,6 +14,7 @@ String axis;
 void setup() 
 {
   driver.init();
+  servo.attach(9);
   Serial.begin(9600);
 }
 
