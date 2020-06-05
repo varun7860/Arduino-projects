@@ -1,15 +1,19 @@
-#include <RH_ASK.h>
-#include <SPI.h> //Serial peripheral interface library
-#include <Servo.h>
+#include<Servo.h>
+#include<RH_ASK.h>
+#include<SPI.h> //Serial peripheral interface library
 
-Servo servo;
+
 RH_ASK rf_driver;
+Servo servo;
 
 String accel;
 String str_out;
 
-int ax; // create the variables for storing int values of string(accel) and string(gyro)
-
+int ax;  // create the variables for storing int values of string(accel) and string(gyro)
+char* a;
+int i;
+int j;
+ 
 
 void setup() 
 {
@@ -21,35 +25,42 @@ void setup()
 
 void loop() 
 {
-  uint8_t buf[7];  // mention the size of the data... depends on how much data is sent. In this case [7].
-  uint8_t buflen = sizeof(buf); // store the whole data ...depends on the user .. if you want you can store  specific part of data.
-  if(rf_driver.recv(buf, &buflen))
-   {
-    str_out = String((char*)buf); //Again recover and seperate the values which were combined in the transmitter program.
-    
-      for(int i=0; i<str_out.length(); i++)
-      {
-        if(str_out.substring(i,i+1)==",")
-          {
-            accel =str_out.substring(0,i);  // create seperate substrings to store the values of accel and gyro
-            break;
-          }
-    Serial.print("X:");  //Print the values
-    Serial.println(accel);
+    // Set buffer to size of expected message
+    uint8_t buf[24];
+    uint8_t buflen = sizeof(buf);
+ 
+    // Check if received packet is correct size
+    if (rf_driver.recv(buf, &buflen))
+    {
       
-      }
-   }
+      // Message received with valid checksum
+      servo.attach(9);
+      Serial.print("The Value of ax: ");
+      a = ((char*)buf);
+      accel = String(a);
+      ax = accel.toInt();
+      Serial.println(ax);
+    
+     
+      //Serial.println((char*)buf);          
+    }
 
-    ax= accel.toInt(); //Convert the Received string values to Int values.
-    
-  if(ax>0)
-  {
-   servo.write(180);
-  }
+     if(ax>600)
+      {
+        Serial.println("Opening the Door");
+        servo.write(i);
+        delay(1000);
+        servo.detach();
+      }
+      
+
+      else if(ax<600)
+      {
+       
+        Serial.println("Door closed");
+        servo.write(180);
+        delay(1000);
+        servo.detach();
+      }
   
-  else
-  {
-    servo.write(0);
-  }
-    
-}  
+}
