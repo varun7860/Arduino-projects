@@ -14,10 +14,10 @@ int acc_flag=0;
 ///////////////////////////End//////////////////////////////////
 
 //////////////////Firebase Parameteres//////////////////////////
-#define FIREBASE_HOST "switch-11aec.firebaseio.com"
-#define FIREBASE_AUTH "B84TdYMlSUmxSvdkm7A9KbJnQqkGbYpN3EpKKFVM"
-const char *ssid =  "Kunal";     
-const char *pass =  "kunal03*";
+#define FIREBASE_HOST " "
+#define FIREBASE_AUTH "  "
+const char *ssid =  " ";     
+const char *pass =  " ";
 char server[] = "mail.smtp2go.com";
 WiFiClient client;
 WiFiClient espClient;
