@@ -6,8 +6,8 @@ Blind people often face the problem of colliding to walls or obstacles. I have c
 
 ## What it does?
 
-- It’s an special device for blind people which will alert them about the nearby obstacles nearby.
-- The obstacle can be walls or any other object which the blind people can collide with.
+- It’s an special device for blind people which will alert them about the nearby obstacles.
+- The obstacles can be walls or any other object to which the user can collide with.
 
 ## Hardware Used
 
