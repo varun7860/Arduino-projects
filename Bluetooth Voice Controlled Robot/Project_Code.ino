@@ -32,7 +32,6 @@ void setup()
   pinMode(ENA2, OUTPUT);
   myServo.write(90);
   myServo.attach(7);
-  
 }
 
 
@@ -154,6 +153,4 @@ void loop()
 
     voice = ""; //Reset the variable after initiating
   }
-  
-
 }
