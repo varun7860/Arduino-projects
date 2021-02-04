@@ -1,7 +1,7 @@
 # Object Detection Device for Blind 
 
 
-## Description 
+## Problem Statement(Description) 
 Blind people often face the problem of colliding to walls or obstacles. I have created a simple embedded system that help them.
 
 ## What it does?
