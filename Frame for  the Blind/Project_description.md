@@ -39,4 +39,4 @@ Note: The obstacle avoiding sensor (HC-SR04) should be used only for testing pur
 - Arduino will be replaced by Raspberry Pi and camera module will be added which will perform image processing for detecting difference between humans and Obstacles.Vibration   Motor can also be added for increasing sensitivity.
 - The device will look like a strap which has be worn side by head.
 While crossing if an obstacle is detected by the device then the vibration motor beneath it will vibrate which will make the user to stop walking and stay still.
-- The obstacle or signal on road will be detected by camera module. The data will be sent to Raspberry pi which will command the motor to vibrate if an obstacle is detected. Gps module will guide them to reach their destination as well as to their homes.
+- The obstacle or signal on road will be detected by camera module. The data will be sent to Raspberry pi which will command the motor to vibrate if an obstacle is detected. Gps module will guide them to reach their desired destination.
