@@ -6,9 +6,16 @@ Blind people often face the problem of colliding to walls or obstacles. I have c
 
 ## What it does?
 
-It’s an embedded device which will guide blind people about the obstacles and objects nearby as well as warn them of about dangers.
+- It’s an special device for blind people which will alert them about the nearby obstacles nearby.
+- The obstacle can be walls or any other object which the blind people can collide with.
 
-This platform will use powerful image processing Algorithms and object detection techniques that will help the blind to survive in real life time based environments.
+## Hardware Used
+
+1. Arduino Pro mini: You can use any arduino but the arduino will suit the most for this project due to its compact size.
+2. Ultrasonic Sensor (HC-SR04): This sensor will detect obstacles that are in front of the person.
+3. General purpose PCB: This will be used to the circuit and mount the arduino on it.
+4. DC Buzzer: The buzzer will beep and alert the user when the obstacle is detected.
+
 
 ## Why the Need of such device?
 
