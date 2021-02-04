@@ -15,7 +15,10 @@ Blind people often face the problem of colliding to walls or obstacles. I have c
 2. Ultrasonic Sensor (HC-SR04): This sensor will detect obstacles that are in front of the person.
 3. General purpose PCB: This will be used to the circuit and mount the arduino on it.
 4. DC Buzzer: The buzzer will beep and alert the user when the obstacle is detected.
+5. Power Supply: Power supply in this case will be a battery. Lithium Ion battery is recommended for this project.
 
+## Software Used
+- Arduino IDE: The only software used in this project is Arduino Ide which will be used for burning the code to Arduino.
 
 ## Why the Need of such device?
 
