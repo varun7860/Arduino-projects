@@ -12,11 +12,9 @@ This platform will use powerful image processing Algorithms and object detection
 
 ## Why the Need of such device?
 
-Blind people often tackle with issues such as crossing road in a very traffic based area and often collide with obstacles.
-
-This makes them vulnerable to injury or sometimes even death.
-
-There is no device to guide these people to cross roads in very congested traffic based environment.
+- Blind people often tackle with issues such as crossing road in a very traffic based area and often collide with obstacles.
+- This makes them vulnerable to injury or sometimes even death.
+- There is no device to guide these people to cross roads in very congested traffic based environment.
 
 ## Implementation and Working of the Device:
 The device looks like a spectacle which has to worn by the user just as we wear any kind of goggles or spectacles.
