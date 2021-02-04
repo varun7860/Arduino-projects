@@ -26,10 +26,11 @@ Note: The obstacle avoiding sensor (HC-SR04) should be used only for testing pur
 
 ## Advantagesof such device:
 
-Easy to use and wear.
-very cheap and cost effective
-light weight and Robust
-Future Scope of the Device:
+- Easy to use and wear.
+- very cheap and cost effective
+- light weight and Robust
+
+## Future Scope of the Device:
 Arduino will be replaced by Raspberry Pi and camera module will be added which will perform image processing for detecting difference between humans and Obstacles.Vibration Motor can also be added for increasing sensitivity.
 The device will look like a strap which has be worn side by head.
 While crossing if an obstacle is detected by the device then the vibration motor beneath it will vibrate which will make the user to stop walking and stay still.
