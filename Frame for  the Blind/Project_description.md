@@ -11,7 +11,7 @@ Blind people often face the problem of colliding to walls or obstacles. I have c
 
 ## Hardware Used
 
-1. Arduino Pro mini: You can use any arduino but the arduino will suit the most for this project due to its compact size.
+1. Arduino Pro mini: You can use any arduino but the arduino pro mini will be best suitable for this project due to its compact size.
 2. Ultrasonic Sensor (HC-SR04): This sensor will detect obstacles that are in front of the person.
 3. General purpose PCB: This will be used to the circuit and mount the arduino on it.
 4. DC Buzzer: The buzzer will beep and alert the user when the obstacle is detected.
