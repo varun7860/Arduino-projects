@@ -22,7 +22,7 @@ when the person is about to hit a wall or a person the obstacle avoiding sensor 
 This will let the user understand that there is something ahead of him/her and save him/her by colliding to it.
 Note: The obstacle avoiding sensor (HC-SR04) should be used only for testing purposes as it not highly accurateand precise. For detecting Obstacles accurately I recommend usng Lidar sensor which works 10 times better than HC-SR04.
 
-## Advantagesof such device:
+## Advantages of such devices:
 
 - Easy to use and wear.
 - very cheap and cost effective
