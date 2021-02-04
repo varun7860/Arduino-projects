@@ -1,6 +1,6 @@
-int Trigpin = 5;
-int Echopin = 4;
-const int buzzer= 10;
+int Trigpin = 5; // Any digital I/O Pin can be used here
+int Echopin = 4; // Any digital I/O Pin can be used here
+const int buzzer= 10; // Any digital I/O Pin can be used here
 long duration;
 int distance;
 
@@ -10,7 +10,6 @@ void setup()
  pinMode(Echopin,INPUT);
  pinMode(Trigpin,OUTPUT);
  pinMode(buzzer,OUTPUT);
-
 }
 
 void loop() 
