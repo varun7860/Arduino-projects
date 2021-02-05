@@ -17,8 +17,6 @@ Quaternion q;           // [w, x, y, z]         quaternion container
 VectorFloat gravity;    // [x, y, z]            gravity vector
 float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gravity vector
 
- 
-
 /*********Tune these Values*********/
 double setpoint= 178.54; //set the value when the bot is perpendicular to ground using serial monitor. 
 //Read the project documentation on circuitdigest.com to learn how to set these values
@@ -29,8 +27,6 @@ double Ki = 160; //Finally set this
 
 double input, output;
 PID pid(&input, &output, &setpoint, Kp, Ki, Kd, DIRECT);
-
- 
 
 volatile bool mpuInterrupt = false;     // indicates whether MPU interrupt pin has gone high
 void dmpDataReady()
@@ -107,11 +103,8 @@ void setup() {
     digitalWrite(4,LOW);
     digitalWrite(5,LOW);
     analogWrite(6,0);
-    analogWrite(9,0);
-    
+    analogWrite(9,0);    
 }
-
- 
 
 void loop()
 {
