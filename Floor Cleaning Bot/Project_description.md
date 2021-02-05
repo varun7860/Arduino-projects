@@ -30,6 +30,6 @@ Bluetooth can connect upto "8 devices" simultaneously and each device offers a u
 - Scatternets are created when a device becomes an active member of more than one piconet. Essentially, the adjoining device shares its time slots among the different piconets.
 
 ## Working of the Floor Cleaner Robot
-First you select on the app which mode you want to put your bot in. if you put it in Semi autonomous mode(SAM) then that's it! you don't have to do anything just watch the cool robot cleaning up your house floors. The reason why this is called semi autonomous is because once put in SAM the bot doesn't know when to stop. you have to manually stop it.
-If you select the manual mode you have to control it with arrow keys on the app.
+- First you select on the app which mode you want to put your bot in. if you put it in Semi autonomous mode(SAM) then that's it! you don't have to do anything just watch the cool robot cleaning up your house floors. The reason why this is called semi autonomous is because once put in SAM the bot doesn't know when to stop. you have to manually stop it.
+- If you select the manual mode you have to control it with arrow keys on the app.
 
