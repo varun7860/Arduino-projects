@@ -1,5 +1,7 @@
 # Floor Cleaning Bot
 
+[![alt text][https://github.com/varun7860/varun7860/blob/main/assets/linkedin.png]]
+
 ## Description 
 -This is a Semi Autonomous Robotic car that cleans floors using water and soap. The main purpose of making this project is to solve the problem of time consuming tiring, tedious and monotonous job of cleaning of Floors. It has two modes:
 
