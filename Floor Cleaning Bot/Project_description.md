@@ -3,8 +3,8 @@
 ## Description 
 -This is a Semi Autonomous Robotic car that cleans floors using water and soup. The main purpose of making this project to solve the problem of time consuming tiring, tedious and monotonous job of cleaning of Floors. It has two modes:
 
- 1.Semi Autonomous Mode
- 2.Manual mode
+ - 1.Semi Autonomous Mode
+ - 2.Manual mode
 
 ## Hardware Description
 - 1.Bluetooth Module(HC-05): This module will help for wireless communication between Arduino and any Bluetooth application. I have used Blynk as my Bluetooth application because its very easy to use.
