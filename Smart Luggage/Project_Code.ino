@@ -10,12 +10,12 @@
 // For Motor A
 int MotorPin1 = 3;
 int MotorPin2 = 4;
-//int ENA1 =10;
+//int ENA =10;
 
 //For Motor B
 int MotorPin3 = 5;
 int MotorPin4 = 6;
-///int ENA2 = 9;
+//int ENB = 9;
 
 
 //For Ultrasonic Sensor
@@ -48,8 +48,6 @@ void loop()
 // digitalWrite(TrigPin, HIGH);
  duration= pulseIn(EchoPin, HIGH);
  distance= (duration/2)/29.1; 
- //Serial.print("distance: ");
- //Serial.println(distance);
  delay(10);
  
  
