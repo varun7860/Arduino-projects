@@ -7,11 +7,11 @@
  2.Manual mode
 
 ## Hardware Description
-1.Bluetooth Module(HC-05): This module will help for wireless communication between Arduino and any Bluetooth application. I have used Blynk as my Bluetooth application because its very easy to use.
-2.Relay Module : This module has an important role in controlling Water Pump Motor and Cleaning Motor. we will be using 1 Relay for each motor.
+- 1.Bluetooth Module(HC-05): This module will help for wireless communication between Arduino and any Bluetooth application. I have used Blynk as my Bluetooth application because its very easy to use.
+- 2.Relay Module : This module has an important role in controlling Water Pump Motor and Cleaning Motor. we will be using 1 Relay for each motor.
 Motor Driver(L298N/L293D): This will be used for controlling the speed and direction of two motors
-BLYNK APP: This will be used for controlling the Robot Manually as well as to switch its modes i.e from manual to autonomous or vice versa. if you dont know anything about this app check for its tutorial at this link
-Link:https://www.hackster.io/nhuberfeely/arduino-101-blynk-bluetooth-tutorial-cb4c5d
+- 3.BLYNK APP: This will be used for controlling the Robot Manually as well as to switch its modes i.e from manual to autonomous or vice versa. if you dont know anything about this app check for its tutorial at this link
+- Link:https://www.hackster.io/nhuberfeely/arduino-101-blynk-bluetooth-tutorial-cb4c5d
 
 Note : you can also use 2 channel relay instead of 2 individual 1 channel Relay modules.
 
