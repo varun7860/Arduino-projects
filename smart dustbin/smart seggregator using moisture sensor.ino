@@ -78,7 +78,5 @@ void loop()
       // digitalRead(DRY);
        digitalWrite(trigPin, LOW);
        Serial.print(dist);
-
-
 }
 
