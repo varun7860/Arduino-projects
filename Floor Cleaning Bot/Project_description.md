@@ -18,8 +18,8 @@ Note : you can also use 2 channel relay instead of 2 individual 1 channel Relay 
 Note : I have used L298N in this project. you can use L293D if you want but let me remind you L293D provides less output current compared to L298N so use it with proper power requirements.
 
 ## What is Bluetooth?
--A Bluetooth technology is a high speed low powered wireless technology link that is designed to connect phones or other portable equipment together. It is a specification (IEEE 802.15.1) for the use of low power radio communications to link phones, computers and other network devices over short distance without wires. Wireless signals transmitted with Bluetooth cover short distances, typically up to 30 feet (10 meters).
--It is achieved by embedded low cost transceivers into the devices. It supports on the frequency band of 2.45GHz and can support upto 721KBps along with three voice channels. --- This frequency band has been set aside by international agreement for the use of industrial, scientific and medical devices (ISM).rd-compatible with 1.0 devices.
+- A Bluetooth technology is a high speed low powered wireless technology link that is designed to connect phones or other portable equipment together. It is a specification (IEEE 802.15.1) for the use of low power radio communications to link phones, computers and other network devices over short distance without wires. Wireless signals transmitted with Bluetooth cover short distances, typically up to 30 feet (10 meters).
+- It is achieved by embedded low cost transceivers into the devices. It supports on the frequency band of 2.45GHz and can support upto 721KBps along with three voice channels. -- This frequency band has been set aside by international agreement for the use of industrial, scientific and medical devices (ISM).rd-compatible with 1.0 devices.
 - Bluetooth can connect upto "8 devices" simultaneously and each device offers a unique 48 bit address from IEEE 802 standard with connections being made from point to point or multipoint.
 
 ## How Bluetooth Works?
