@@ -1,5 +1,5 @@
 # Object Detection Device for Blind 
-<img align="center" width="700" height="475" src="https://github.com/varun7860/Arduino-projects/blob/master/Frame%20for%20%20the%20Blind/Images/Obstacle%20Detection%20Device%20for%20the%20Blind.jpg"> 
+<img align="center" width="563" height="539" src="https://github.com/varun7860/Arduino-projects/blob/master/Frame%20for%20%20the%20Blind/Images/Obstacle%20Detection%20Device%20for%20the%20Blind.jpg"> 
 
 ## Problem Statement (Description) 
 Blind people often face the problem of colliding to walls or obstacles. I have created a simple embedded system that help them.
