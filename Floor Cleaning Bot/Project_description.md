@@ -34,7 +34,7 @@ Note : I have used L298N in this project. you can use L293D if you want but let 
 - Scatternets are created when a device becomes an active member of more than one piconet. Essentially, the adjoining device shares its time slots among the different piconets.
 
 ## Custom Circuit made for the project
-<img align="center" width="281" height="281" src="https://github.com/varun7860/Arduino-projects/blob/master/Floor%20Cleaning%20Bot/Images/PCB.jpg">
+<img align="center" width="281" height="555" src="https://github.com/varun7860/Arduino-projects/blob/master/Floor%20Cleaning%20Bot/Images/PCB.jpg">
 <img align="center" width="448" height="284" src="https://github.com/varun7860/Arduino-projects/blob/master/Floor%20Cleaning%20Bot/Images/PCB%20Backside.jpg"> 
 ## Working of the Floor Cleaner Robot
 - First you select on the app which mode you want to put your bot in. if you put it in Semi autonomous mode(SAM) then that's it! you don't have to do anything just watch the cool robot cleaning up your house floors. 
