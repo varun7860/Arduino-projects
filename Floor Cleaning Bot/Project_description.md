@@ -1,8 +1,6 @@
 # Floor Cleaning Bot
 
-[![alt text][]]
-
-<img align="centre" width="600" height="400" src="https://github.com/varun7860/Arduino-projects/blob/master/Floor%20Cleaning%20Bot/Images/Floor%20Cleaning%20Bot.jpg"> 
+<img align="right" width="600" height="400" src="https://github.com/varun7860/Arduino-projects/blob/master/Floor%20Cleaning%20Bot/Images/Floor%20Cleaning%20Bot.jpg"> 
 
 ## Description 
 -This is a Semi Autonomous Robotic car that cleans floors using water and soap. The main purpose of making this project is to solve the problem of time consuming tiring, tedious and monotonous job of cleaning of Floors. It has two modes:
