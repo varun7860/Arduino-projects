@@ -34,3 +34,5 @@ Note : I have used L298N in this project. you can use L293D if you want but let 
 - The reason why this is called semi autonomous is because once put in SAM the bot doesn't know when to stop. you will have to manually stop it.
 - If you select the manual mode you have to control it with arrow keys on the app.
 
+## Code Explanation Step by Step
+
