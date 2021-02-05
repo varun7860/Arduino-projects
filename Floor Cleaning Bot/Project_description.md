@@ -25,6 +25,8 @@ Note : I have used L298N in this project. you can use L293D if you want but let 
 - Bluetooth can connect upto "8 devices" simultaneously and each device offers a unique 48 bit address from IEEE 802 standard with connections being made from point to point or multipoint.
 
 ## How Bluetooth Works?
+<img align="center" width="448" height="284" src="https://github.com/varun7860/Arduino-projects/blob/master/Floor%20Cleaning%20Bot/Images/Bluetooth.jpg"> 
+
 - Bluetooth Network consists of a Personal Area Network or a piconet which contains a minimum of 2 to maximum of 8 bluetooth peer devices- Usually a single master and upto 7 slaves.
 - A master is the device which initiates communication with other devices. The master device governs the communications link and trafﬁc between itself and the slave devices associated with it.
 - A slave device is the device that responds to the master device. Slave devices are required to synchronize their transmit/receive timing with that of the masters. In addition, transmissions by slave devices are governed by the master device (i.e., the master device dictates when a slave device may transmit). Speciﬁcally, a slave may only begin its transmissions in a time slot immediately following the time slot in which it was addressed by the master, or in a time slot explicitly reserved for use by the slave device.
