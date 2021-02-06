@@ -1,5 +1,5 @@
 # Smart Segregator
-
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Smart%20Segregator/Images/Smart%20Segregator.jpg" width="504" height="317"/>
 ## Description
 This segregator can separate dry waste and wet waste successfully.
 
