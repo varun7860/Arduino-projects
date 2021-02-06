@@ -19,7 +19,10 @@ This is kind of car that can be controlled by just hand gestures. This project h
 
 <img src="https://github.com/varun7860/Arduino-projects/blob/master/Gesture%20Controlled%20Car/Images/Gestures.jpg" width="207" height="207"/>
 
-The above is the figure of the gestures I have used to control the car. When a gesture is made by the user the MPU-6050 values are mapped by Arduino pro mini(Transmitter). The transmitter controller encodes this value as string and transmits it to Receiving Arduino through 433MHZ transmitter module. The receiving Arduino receives the data through 433MHZ Receiver module. When the data is received its in-String Format. The controller converts this “String” into “INT”and then as per the program it controls the car “FORWARD”, “BACKWARD”, “LEFT”, Or “RIGHT”.
+- The above is the figure of the gestures I have used to control the car. When a gesture is made by the user the MPU-6050 values are mapped by Arduino pro mini(Transmitter). 
+- The transmitter controller encodes this value as string and transmits it to Receiving Arduino through 433MHZ transmitter module. 
+- The receiving Arduino receives the data through 433MHZ Receiver module. When the data is received its in-String Format. 
+- The controller converts this “String” into “INT”and then as per the program it controls the car “FORWARD”, “BACKWARD”, “LEFT”, Or “RIGHT”.
 
 ## ASK – Amplitude Shift Keying
 
