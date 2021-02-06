@@ -1,5 +1,5 @@
 # Gesture Controlled Bot
-<img src="https://github.com/varun7860/Arduino-projects/blob/master/Gesture%20Controlled%20Car/Images/Gesture%20Controlled%20Car.jpg" width="30" height="30"/>
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Gesture%20Controlled%20Car/Images/Gesture%20Controlled%20Car.jpg" width="504" height="317"/>
 
 ## Description
 This is kind of car that can be controlled by just hand gestures. This project has tremendous applications especially in health domain. For example, a person who is disabled and is on wheelchair can control his wheelchair just by using hand gestures. We know how dangerous it can be to meet a covid-19 positive patient. This project can be used there as well to open doors wirelessly, to supply food to patients through robot or robotic car just by using hand gestures.
