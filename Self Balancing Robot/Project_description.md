@@ -22,7 +22,7 @@ This position of the robot is called balancing position. The set of offset value
 
 ## PID Conceptfor self balancing Robot
 
-<img src="https://github.com/varun7860/Arduino-projects/blob/master/Self%20Balancing%20Robot/Images/PID.jpg" width="522" height="555"/>
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Self%20Balancing%20Robot/Images/PID.jpg" width="718" height="316"/>
 
 1. PID stands for:
 
