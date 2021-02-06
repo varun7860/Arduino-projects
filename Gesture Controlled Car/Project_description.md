@@ -15,6 +15,8 @@ This is kind of car that can be controlled by just hand gestures. This project h
 
 ## Block Diagram
 
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Gesture%20Controlled%20Car/Images/Block%20Diagram.jpg" width="582" height="224"/>
+
 ## Working
 
 <img src="https://github.com/varun7860/Arduino-projects/blob/master/Gesture%20Controlled%20Car/Images/Gestures.jpg" width="207" height="207"/>
