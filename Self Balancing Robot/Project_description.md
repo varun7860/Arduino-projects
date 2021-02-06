@@ -1,5 +1,5 @@
 # Self Balancing Robot
-
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Self%20Balancing%20Robot/Images/Self%20Balancing%20Bot.jpg" width="522" height="555"/>
 This Robot balances itself and can also withstand the weight of glass of water! how cool is that?!
 
 ## Description 
