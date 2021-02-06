@@ -1,10 +1,9 @@
 # Self Balancing Robot
 <img src="https://github.com/varun7860/Arduino-projects/blob/master/Self%20Balancing%20Robot/Images/Self%20Balancing%20Bot.jpg" width="522" height="555"/>
-This Robot balances itself and can also withstand the weight of glass of water! how cool is that?!
 
 ## Description 
 
-I always wondered how awesome it would be if Robot balances itself on two wheels/legs just like us humans!. Cool isn't it? Yes you are right !! so I decided to build one for myself. So basically this is a self balancing robot that can balance itself on just two wheels!
+I always wondered how awesome it would be if Robot balances itself on two wheels/legs just like us humans!. Cool isn't it? Yes you are right !! so I decided to build one for myself. So basically this is a self balancing robot that can balance itself on just two wheels. This Robot balances itself and can also withstand the weight of glass of water! how cool is that?!
 
 ## Applications
 
@@ -21,7 +20,9 @@ This position of the robot is called balancing position. The set of offset value
 - A feedback mechanism is provided which compares the new set of values with initial reference values. Thus the position of robot from balancing position is determined.
 - The angle of tilt can be corrected by controlling dc gear motors/Bo Motors thereby maintaining balance.
 
-## PID Conceptfor self balancing Robot:
+## PID Conceptfor self balancing Robot
+
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Self%20Balancing%20Robot/Images/PID.jpg" width="522" height="555"/>
 
 1. PID stands for:
 
