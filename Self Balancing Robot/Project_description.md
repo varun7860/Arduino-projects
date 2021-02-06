@@ -38,7 +38,7 @@ This position of the robot is called balancing position. The set of offset value
 
 5. Error : it is the difference between the desired position and obtained position of the Robot. It is given by:
 
-Error(E) = Desired_Position - Actual_Position
+   - Error(E) = Desired_Position - Actual_Position
 
 ## Tuning Of PID Values 
 - There are many ways by which Kp, Ki and Kd values of the system is tuned one of which is manual tuning through which stability can be easily achieved. Initially the Kp, Ki and Kd values are set to zero. Then Kp value is increased from zero till a point where the system starts to oscillate from its mean position.
