@@ -20,6 +20,8 @@ The above is the figure of the gestures I have used to control the car. When a g
 
 ## ASK – Amplitude Shift Keying
 
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Gesture%20Controlled%20Car/Images/ASK.jpg" width="316" height="179"/>
+
 - Amplitude Shift Keying or ASK. This is a simpler method, like Amplitude Modulation or AM radio. Because these modules are very simple, we have used “ASK” in our Code.
 
 - In Amplitude Shift Modulation the amplitude (i.e. the level) of the carrier wave is changed in response to the incoming data signal. This is sometimes called Binary Amplitude Shift Modulation as there really are only two levels to be concerned with:
