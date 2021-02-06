@@ -20,10 +20,10 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
 
 ## Working of Smart Segregator Step by Step:
 
-step1: Waste is put and lands on moisture sensor.
-Step 2: Depending upon the Threshold set Moisture sensor classifies it as dry or wet.
-Step 3: As soon step 2 is done Servo Motor runs to either direction depending upon the type of waste and the waste goes in the appropriate compartment.
-step 4: The whole process is autonomous and Continuous.
+- step1: Waste is put and lands on moisture sensor.
+- Step2: Depending upon the Threshold set Moisture sensor classifies it as dry or wet.
+- Step3: As soon step 2 is done Servo Motor runs to either direction depending upon the type of waste and the waste goes in the appropriate compartment.
+- step4: The whole process is autonomous and Continuous.
 
 ## Code Explanation
 
