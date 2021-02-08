@@ -71,19 +71,19 @@ While crossing if an obstacle is detected by the device then the vibration motor
    ```
 3. Send the ultrasonic sound wave from Trig pin of ultrasonic distance sensor
 
-  ```
-  void loop()
-  {
-  digitalWrite(Trigpin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(Trigpin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(Trigpin, LOW);
-  }
-  ```
+    ```
+    void loop()
+    {
+     digitalWrite(Trigpin, LOW);
+     delayMicroseconds(2);
+     digitalWrite(Trigpin, HIGH);
+     delayMicroseconds(10);
+     digitalWrite(Trigpin, LOW);
+     }
+    ```
   
 4. The Echo pin will receive the wave at some point of time. Lets calculate this time and then the distance using `distance = speed * time`
-  ```
-  duration = pulseIn(Echopin,HIGH);
-  distance = (duration*0.034)/2;
-  ```
+    ```
+    duration = pulseIn(Echopin,HIGH);
+    distance = (duration*0.034)/2;
+    ```
