@@ -65,3 +65,5 @@ when it is walking it has options : it can maintain passive stability while walk
      - 12 Motor Quadruped (It consist of Tibia:Requires 3DOF Inverse Kinematics)
      
 ## Code Explaination
+
+## Demonstration Video
