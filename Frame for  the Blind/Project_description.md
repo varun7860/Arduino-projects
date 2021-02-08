@@ -44,4 +44,46 @@ This will let the user understand that there is something ahead of him/her and s
 While crossing if an obstacle is detected by the device then the vibration motor beneath it will vibrate which will make the user to stop walking and stay still.
 - The obstacle or signal on road will be detected by camera module. The data will be sent to Raspberry pi which will command the motor to vibrate if an obstacle is detected. Gps module will guide them to reach their desired destination.
 
-## Arduino Code Explaination
+## Code Explanation
+
+1. Declare the necessary pins
+   ```
+   //Ultrasonic Sensor Pins
+   int Trigpin = 5; 
+   int Echopin = 4; 
+   
+   // DC Buzzer Pin
+   const int buzzer= 10;
+   
+   //Formula Variables
+   long duration;
+   int distance;
+   ```
+2. Set the pins as input or output in `void setup` Function.
+   ```
+   void setup() 
+   {
+    Serial.begin(9600);
+    pinMode(Echopin,INPUT);
+    pinMode(Trigpin,OUTPUT);
+    pinMode(buzzer,OUTPUT);
+   }
+   ```
+3. Send the ultrasonic sound wave from Trig pin of ultrasonic distance sensor
+
+  ```
+  void loop()
+  {
+  digitalWrite(Trigpin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(Trigpin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(Trigpin, LOW);
+  }
+  ```
+  
+4. The Echo pin will receive the wave at some point of time. Lets calculate this time and then the distance using `distance = speed * time`
+  ```
+  duration = pulseIn(Echopin,HIGH);
+  distance = (duration*0.034)/2;
+  ```
