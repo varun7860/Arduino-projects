@@ -65,7 +65,7 @@ when it is walking it has options : it can maintain passive stability while walk
      - > 12 Motor Quadruped (It consist of Tibia:Requires 3DOF Inverse Kinematics)
      
 ## Code Explanation
-'''
+```
 void step_forward()
 {
 delay(500);
@@ -105,6 +105,6 @@ servo1.write(20);
 servo2.write(20);
 delay(500);
 }
-'''
+```
 
 ## Demonstration Video
