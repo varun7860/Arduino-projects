@@ -61,8 +61,8 @@ when it is walking it has options : it can maintain passive stability while walk
 
 - **Note : There are variations for Quadruped Robots. I have used 8 Motor Quadruped. So inverse Kinematics of 2 DOF is required here not 3.**
 
-     - 8 Motor Quadruped (There is no Tibia : Requires 2DOF Inverse Kinematics)
-     - 12 Motor Quadruped (It consist of Tibia:Requires 3DOF Inverse Kinematics)
+     - > 8 Motor Quadruped (There is no Tibia : Requires 2DOF Inverse Kinematics)
+     - > 12 Motor Quadruped (It consist of Tibia:Requires 3DOF Inverse Kinematics)
      
 ## Code Explaination
 
