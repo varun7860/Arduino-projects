@@ -50,13 +50,13 @@ when it is walking it has options : it can maintain passive stability while walk
 
 7. The back-right leg lifts and steps back into the body, bringing us back to the starting position.
 
-- ### Notice that at all times, the triangle formed by the legs on the ground contains the CoG. This is the essence of the creep gait. When we look at this pattern, we can see it is essentially two sets of mirrored movements. Step, step and shift, followed by another step, step and shift on the other side. Here is the code snippet for it:)
+- #### Notice that at all times, the triangle formed by the legs on the ground contains the CoG. This is the essence of the creep gait. When we look at this pattern, we can see it is essentially two sets of mirrored movements. Step, step and shift, followed by another step, step and shift on the other side. Here is the code snippet for it:)
 
-- ### Note: My code may or may not work you. why? Because COG depends upon the weight and type of the body of the robot!. Yours chasis may be different. Tweak the Arduino code and Inverse Kinematics (IK) accordingly.
+- #### Note: My code may or may not work you. why? Because COG depends upon the weight and type of the body of the robot!. Yours chasis may be different. Tweak the Arduino code and Inverse Kinematics (IK) accordingly.
 
-- Note :I have taken this algorithm step by step and some of information from Make magzine's official website https://makezine.com/2016/11/22/robot-quadruped-arduino-program/ check this link to find out more !
+- #### Note :I have taken this algorithm step by step and some of information from Make magzine's official website https://makezine.com/2016/11/22/robot-quadruped-arduino-program/ check this link to find out more !
 
-- Note : There are variations for Quadruped Robots. I have used 8 Motor Quadruped. So inverse Kinematics of 2 DOF is required here not 3.
+- #### Note : There are variations for Quadruped Robots. I have used 8 Motor Quadruped. So inverse Kinematics of 2 DOF is required here not 3.
 
      - 8 Motor Quadruped (There is no Tibia : Requires 2DOF Inverse Kinematics)
      - 12 Motor Quadruped (It consist of Tibia:Requires 3DOF Inverse Kinematics)
