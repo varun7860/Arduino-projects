@@ -29,6 +29,6 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
 ## Code Explanation
 
 1. Include the necessary Library. Library in C++ is included by '#include<LIBRARY_NAME>'.
-   - ```#include <Servo.h>```
+- ```#include <Servo.h>```
 
 ## Working Video
