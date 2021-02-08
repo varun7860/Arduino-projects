@@ -28,11 +28,11 @@ when it is walking it has options : it can maintain passive stability while walk
 
 ## Types of Gaits
 
-1.Creep Gait : This gait is the easiest walking gait to use. The robot keeps 3 feet on the ground and keeps its center of gravity (COG) inside the triangle formed by those 3 feet. If COG goes outside the triangle for too long it will fall over.In case of quadrupeds such as animals, they use movements of the head and tail to move the COG back and forth to keep it within Stability Triangle.
+1. Creep Gait : This gait is the easiest walking gait to use. The robot keeps 3 feet on the ground and keeps its center of gravity (COG) inside the triangle formed by those 3 feet. If COG goes outside the triangle for too long it will fall over.In case of quadrupeds such as animals, they use movements of the head and tail to move the COG back and forth to keep it within Stability Triangle.
 
-2.Trot Gait: Its sometimes called amble gait. Two diagonal legs swings forward while the other two support the body and move backward(as if the body is moving forward. Its one of the quickest gaits because two of its legs are lifted at one time. The stability of the body is related to the frequency of the legs lifted and placed. Quicker the placement the less shaky you will find it is. Make sure the feet have a large contact which will help it stay better while the other two legs are lifted.
+2. Trot Gait: Its sometimes called amble gait. Two diagonal legs swings forward while the other two support the body and move backward(as if the body is moving forward. Its one of the quickest gaits because two of its legs are lifted at one time. The stability of the body is related to the frequency of the legs lifted and placed. Quicker the placement the less shaky you will find it is. Make sure the feet have a large contact which will help it stay better while the other two legs are lifted.
 
-3.Crawl Gait: This is similar to the first gait but in this one COG shifts while walking to maintain a better stability. To do that we need to know which leg is going to be lifted and placed forward and the other three legs will form a supporting tripod.To stay stable the robot has to be inside the COG Triangle.
+3. Crawl Gait: This is similar to the first gait but in this one COG shifts while walking to maintain a better stability. To do that we need to know which leg is going to be lifted and placed forward and the other three legs will form a supporting tripod.To stay stable the robot has to be inside the COG Triangle.
 
 ## Creep Gait Algorithm
 
