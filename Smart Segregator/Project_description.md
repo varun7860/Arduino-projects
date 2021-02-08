@@ -21,10 +21,10 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
 
 ## Working of Smart Segregator Step by Step:
 
-- step1: Waste is put and lands on moisture sensor.
+- Step1: Waste is put and lands on moisture sensor.
 - Step2: Depending upon the Threshold set Moisture sensor classifies it as dry or wet.
 - Step3: As soon step 2 is done Servo Motor runs to either direction depending upon the type of waste and the waste goes in the appropriate compartment.
-- step4: The whole process is autonomous and Continuous.
+- Step4: The whole process is autonomous and Continuous.
 
 ## Code Explanation
 
@@ -40,12 +40,11 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
   //Servo Motor Pin
   int servoPin = 7;
 
-  //Ultrasonic Sensor Pins
-  int trigPin = 5;
-  int echoPin = 6;
+  //Touch Sensor Pin
+  int touch_sensor = 2;
 
-  // LED Pin
-  int ledPin = 10;
+  //Moisture Sensor Pin
+  int moisture_sensor = 8;
   
   //Formula Variables
   long duration, dist, average;
@@ -59,12 +58,15 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
 {
   Serial.begin(9600); //This is used to check Output in serial monitor.
   servo.attach(servoPin); //servo.attach makes servo pin available for signals from Arduino.
-  pinMode(trigPin, OUTPUT); //Pin mode is used for setting pins as output or input.
-  pinMode(echoPin, INPUT);
+  pinMode(touch_sensor, OUTPUT); //Pin mode is used for setting pins as output or input.
+  pinMode(moisture_sensor, INPUT);
   servo.write(0); // servo.write rotates the servo motor
   delay(100);
   servo.detach(); // servo.detach() is opposite of servo.attach() function
 }
  ```
+ 
+4. Create a function to measure the distance.
+
 
 ## Working Video
