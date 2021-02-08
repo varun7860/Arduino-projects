@@ -1,12 +1,24 @@
 # Quadruped Robot
 
 ## Description 
-- This is a cool quadruped which can walk, exercise and dance. how cool is that!? :) This Robot a special type of algorithm for its walking which I will explain in detail below.   But before that lets talk about difference between statically and dynamically stable gaits.
+- This is a cool quadruped which can walk, exercise and dance. how cool is that!? This Robot uses a special type of algorithm for its walking which I will explain in detail below. But before that lets talk about difference between statically and dynamically stable gaits.
 
 ## Statically and Dynamically Stable Gaits
 - When the robot walks, it has to keep its balance. There are two general strategies for doing that, and according to them, we divide the gaits into statically stable and dynamically stable.
 - For statically stable gaits it doesn’t matter how fast they are performed, or whether the robot is stopped in a middle of a step – it is stable at any moment, at all times. Animals and people use those gaits when they want to go slowly, or when they want to be able to stop at any time. An example of such a gait is the “creep” gait, used by cats stalking their prey.
 - Dynamically stable gaits are much harder, as they have to be performed at a particular speed and cannot be interrupted at an arbitrary point. They are sometimes called “controlled falling”, as they exploit the fact that it takes some time for the robot to fall when it’s unstable, and that time can be used to move the legs in such a way as to prevent the fall. Most animal gaits are dynamically stable, as they tend to be faster and more energy-efficient. An example of a simple dynamically stable gait is the “trot” gait.
+
+## Hardware Requirements
+1. Chassis(Body)
+2. 8 SG-90 Servo Motors
+3. Arduino Pro mini
+4. Battery(Lipo or lithium-ion is suggested)
+5. General Purpose PCB
+6. HC-05 Bluetooth Module.
+
+## Software Requirements
+1. Arduino IDE
+2. Bluetooth app to control the Robot using voice or text commands.(Blynk is one of the best option for this)
 
 ## Passive Vs Active Stability:
 
@@ -16,9 +28,7 @@ when it is walking it has options : it can maintain passive stability while walk
 
 ## Types of Gaits
 
-1.Creep Gait : This gait is the easiest walking gait to use. The robot keeps 3 feet on the ground and keeps its center of gravity (COG) inside the triangle formed by those 3 feet. If COG goes outside the triangle for too long it will fall over.
-
-In case of quadrupeds such as animals ; they use movements of the head and tail to move the COG back and forth to keep it within Stability Triangle.
+1.Creep Gait : This gait is the easiest walking gait to use. The robot keeps 3 feet on the ground and keeps its center of gravity (COG) inside the triangle formed by those 3 feet. If COG goes outside the triangle for too long it will fall over.In case of quadrupeds such as animals, they use movements of the head and tail to move the COG back and forth to keep it within Stability Triangle.
 
 2.Trot Gait: Its sometimes called amble gait. Two diagonal legs swings forward while the other two support the body and move backward(as if the body is moving forward. Its one of the quickest gaits because two of its legs are lifted at one time. The stability of the body is related to the frequency of the legs lifted and placed. Quicker the placement the less shaky you will find it is. Make sure the feet have a large contact which will help it stay better while the other two legs are lifted.
 
