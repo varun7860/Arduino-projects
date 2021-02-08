@@ -14,7 +14,7 @@
 when it is walking it has options : it can maintain passive stability while walking by keeping three legs on the ground and reaching out with the fourth(Creep Gait Algorithm).
 - It can also use active stability to move faster (Trot Gait Algorithm).
 
-## TypesofGaits
+## Types of Gaits
 
 1.Creep Gait : This gait is the easiest walking gait to use. The robot keeps 3 feet on the ground and keeps its center of gravity (COG) inside the triangle formed by those 3 feet. If COG goes outside the triangle for too long it will fall over.
 
