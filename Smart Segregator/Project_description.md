@@ -51,5 +51,20 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
   long duration, dist, average;
   long aver[3];
   ```
+  
+3. Initialize all the I/O Pins in the `void setup()` Function.
+
+ ```
+ void setup() 
+{
+  Serial.begin(9600); //This is used to check Output in serial monitor.
+  servo.attach(servoPin); //servo.attach makes servo pin available for signals from Arduino.
+  pinMode(trigPin, OUTPUT); //Pin mode is used for setting pins as output or input.
+  pinMode(echoPin, INPUT);
+  servo.write(0); // servo.write rotates the servo motor
+  delay(100);
+  servo.detach(); // servo.detach() is opposite of servo.attach() function
+}
+ ```
 
 ## Working Video
