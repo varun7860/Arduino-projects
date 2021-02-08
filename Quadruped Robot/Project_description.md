@@ -28,6 +28,7 @@ when it is walking it has options : it can maintain passive stability while walk
 - It can also use active stability to move faster (Trot Gait Algorithm).
 
 ## Types of Gaits
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Quadruped%20Robot/Images/COG.jpg" width="577" height="555"/>
 
 1. Creep Gait : This gait is the easiest walking gait to use. The robot keeps 3 feet on the ground and keeps its center of gravity (COG) inside the triangle formed by those 3 feet. If COG goes outside the triangle for too long it will fall over.In case of quadrupeds such as animals, they use movements of the head and tail to move the COG back and forth to keep it within Stability Triangle.
 
@@ -36,6 +37,7 @@ when it is walking it has options : it can maintain passive stability while walk
 3. Crawl Gait: This is similar to the first gait but in this one COG shifts while walking to maintain a better stability. To do that we need to know which leg is going to be lifted and placed forward and the other three legs will form a supporting tripod.To stay stable the robot has to be inside the COG Triangle.
 
 ## Creep Gait Algorithm
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Quadruped%20Robot/Images/Gait.jpg" width="577" height="555"/>
 
 1. (From left side)This is the starting position, with two legs extended out on one side, and the other two legs pulled inward.
 
