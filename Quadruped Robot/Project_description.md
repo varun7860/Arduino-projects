@@ -1,4 +1,5 @@
 # Quadruped Robot
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Quadruped%20Robot/Images/Quadruped.jpg" width="548" height="411"/>
 
 ## Description 
 - This is a cool quadruped which can walk, exercise and dance. how cool is that!? This Robot uses a special type of algorithm for its walking which I will explain in detail below. But before that lets talk about difference between statically and dynamically stable gaits.
