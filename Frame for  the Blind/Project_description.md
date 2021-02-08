@@ -87,3 +87,19 @@ While crossing if an obstacle is detected by the device then the vibration motor
     duration = pulseIn(Echopin,HIGH);
     distance = (duration*0.034)/2;
     ```
+
+5. Finally put the condition of beeping the buzzer if the user is close to the obstacle.
+   ```   
+   if (distance<30&&distance>1)
+    {
+     digitalWrite(buzzer,HIGH); // Buzzer will beep for 3 secs and then stop.
+     delay(3000);
+     digitalWrite(buzzer,LOW);
+    }
+
+   else
+    {
+    digitalWrite(buzzer,LOW); // Turn the Buzzer off the user goes away from the obstacle.
+    }
+   }
+   ```
