@@ -34,8 +34,22 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
   #include <Servo.h>
   Servo servo;
   ```
-  
 
-2. 
+2. Define the I/O pins.
+  ```
+  //Servo Motor Pin
+  int servoPin = 7;
+
+  //Ultrasonic Sensor Pins
+  int trigPin = 5;
+  int echoPin = 6;
+
+  // LED Pin
+  int ledPin = 10;
+  
+  //Formula Variables
+  long duration, dist, average;
+  long aver[3];
+  ```
 
 ## Working Video
