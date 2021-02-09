@@ -139,7 +139,7 @@
   int j;
   ```
   
- 2. Initialize the modules in `void setup` function.
+  2. Initialize the modules in `void setup` function.
  
  ```
  void setup() 
@@ -150,14 +150,14 @@
  }
  ```
  
- 3. Set the buffer to match the size of incoming message.
+  3. Set the buffer to match the size of incoming message.
  
  ```
  uint8_t buf[24];
  uint8_t buflen = sizeof(buf);
  ```
  
- 4. Receive the message and check if the size of message is correct. 
+  4. Receive the message and check if the size of message is correct. 
  
  ```
  if (rf_driver.recv(buf, &buflen))
@@ -169,7 +169,7 @@
    a = ((char*)buf);
  ```
  
- 5. Convert the value to `String` and then convert it to `Int`
+  5. Convert the value to `String` and then convert it to `Int`
  
  ```
   accel = String(a);
@@ -177,7 +177,7 @@
  }
  ```
  
- 6. Put the condition to open the door.
+  6. Put the condition to open the door.
  
  ```
  if(ax>600)
