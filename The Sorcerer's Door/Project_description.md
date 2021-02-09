@@ -141,63 +141,63 @@
   
   2. Initialize the modules in `void setup` function.
  
- ```
- void setup() 
- {
-  rf_driver.init();
-  Serial.begin(9600);
-  servo.attach(9);
- }
- ```
+  ```
+  void setup() 
+  {
+   rf_driver.init();
+   Serial.begin(9600);
+   servo.attach(9);
+  }
+  ```
  
   3. Set the buffer to match the size of incoming message.
  
- ```
- uint8_t buf[24];
- uint8_t buflen = sizeof(buf);
- ```
+  ```
+  uint8_t buf[24];
+  uint8_t buflen = sizeof(buf);
+  ```
  
   4. Receive the message and check if the size of message is correct. 
  
- ```
- if (rf_driver.recv(buf, &buflen))
-  {
+  ```
+  if (rf_driver.recv(buf, &buflen))
+   {
       
-   // Message received with valid checksum
-   servo.attach(9);
-   Serial.print("The Value of ax: ");
-   a = ((char*)buf);
- ```
+    // Message received with valid checksum
+    servo.attach(9);
+    Serial.print("The Value of ax: ");
+    a = ((char*)buf);
+  ```
  
   5. Convert the value to `String` and then convert it to `Int`
  
- ```
-  accel = String(a);
-  ax = accel.toInt();
- }
- ```
+  ```
+   accel = String(a);
+   ax = accel.toInt();
+  }
+  ```
  
   6. Put the condition to open the door.
  
- ```
- if(ax>600)
-  {
-    Serial.println("Opening the Door");
-    servo.write(i);
-    delay(1000);
-    servo.detach();
-  }
-      
-
- else if(ax<600)
-    { 
-     Serial.println("Door closed");
-     servo.write(180);
+  ```
+  if(ax>600)
+   {
+     Serial.println("Opening the Door");
+     servo.write(i);
      delay(1000);
      servo.detach();
-    }  
- }
- ```
+   }
+      
+
+  else if(ax<600)
+     { 
+      Serial.println("Door closed");
+      servo.write(180);
+      delay(1000);
+      servo.detach();
+     }  
+  }
+  ```
  
  
 
