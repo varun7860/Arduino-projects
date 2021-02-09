@@ -27,6 +27,9 @@
 5. Wire stripper and cutter
 6. Jumper wire kit.
 
+## Software Requirements
+- Arduino IDE
+
 ## Working of Sorcerer's Door Step by Step:
 1. Basically there are two arduinos used. Arduino pro mini will be used for transmitting data and Arduino Uno will be used for receiving data.
 
