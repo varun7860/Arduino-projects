@@ -44,5 +44,34 @@ Note : I have used L298N in this project. you can use L293D if you want but let 
 
 ## Code Explanation Step by Step
 
+1. Include the necessary Library and define the pins.
+
+```
+#include<SoftwareSerial.h>
+SoftwareSerial Blue(TX,RX);
+
+//Bluetooth Module Pins
+int TX=0;
+int RX=1;
+
+//Relay Pins
+int Rp1=9;//cleaning motor pin
+int Rp2=10;//water pump pin
+
+String button;
+
+//Motor Driver Pins(L298N)
+const int M1=2;
+const int M2=3;
+const int M3=4;
+const int M4=5;
+
+/*Use these pins 
+if you want a specific speed
+for the robot/*
+//const int ENA=9; 
+//const int ENB=10;
+```
+
 ## Working Video
 
