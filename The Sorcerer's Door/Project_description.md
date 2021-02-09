@@ -1,6 +1,9 @@
 # The Sorcerer's Door
 - Simple Project that allows you to open door without touching it. Guess how? shuusssh! its Magic!!!
 
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/The%20Sorcerer's%20Door/Images/The%20Sorcerer's%20Door.jpg"  width="504" height="317"/>
+
+
 ## Description
 
 - This is just a simple cool project by which you can open door without Touching it.
