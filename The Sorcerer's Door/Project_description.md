@@ -7,13 +7,14 @@
 
 ## Harware Requirements
 
-1. Arduino Pro Mini (x2)
-2. RF-433 Mhz Transreceiver module (x1)
-3. Glove (x1) : Left handed or Right handed your choice
+1. Arduino Pro Mini (x2).
+2. RF-433 Mhz Transreceiver module (x1).
+3. Glove (x1) : Left handed or Right handed your choice.
 4. 9V Rechargable Battery.
-5. General purpose PCB (x2)
-6. MG-995 Servo Motor (x1)
-7. Mpu-6050 (x1)
+5. General purpose PCB (x2).
+6. MG-995 Servo Motor (x1).
+7. Mpu-6050 (x1).
+8. Little strong thread or rope to tie shaft of servo motor and knob of the door.
 
 ## Hand tools and fabrication machines
 
@@ -37,6 +38,7 @@
 
 
 ## Code Explanation
+
 
 ## Demonstration Video.
 
