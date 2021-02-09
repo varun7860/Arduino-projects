@@ -170,7 +170,80 @@ void Autonomous()
 }
 ```
 
-4.
+4. Find out if any button press is detected by the `HC-05` Module in the start of `void loop` function.
+
+```
+void loop()
+{
+ while (Serial.available())//Check if there is an available byte to read
+  { 
+    delay(10);  
+    char c = Serial.read(); 
+    if (c == '#') 
+    {
+      break; //Exit the loop when the # is detected after the word
+    } 
+    button += c; //Shorthand for button = button + c
+  }
+```
+
+5. Add your condition for the robot to operate after the button press is detected.
+
+```
+if(button.length()>0)
+  {
+    Serial.println(button);
+    
+    if(button=="*front")
+    {
+      Serial.println("go forward");
+      forward();
+    }
+     if(button=="*back")
+     {
+       Serial.println("GO backward");
+       backward();
+     }
+     if(button=="*right")
+     {
+       Serial.println("GO right");
+       right();
+     }
+
+     if(button=="*left")
+     {
+       Serial.println("GO left");
+       left();
+     }
+
+     if(button=="*water")
+     {
+       Serial.println("Turn the pump on");
+       digitalWrite(Rp2,LOW);
+     }
+
+     if(button=="*clean")
+     {
+       Serial.println("Turn the cleaning motor on");
+       digitalWrite(Rp1,LOW);
+     }
+
+     
+     if(button=="*Autonomous")
+     {
+       Serial.println("Entered Autonomous Mode");
+       Autonomous();
+     }
+
+     if(button=="*pause")
+     {
+       Serial.println("Entered Autonomous Mode");
+       pause();
+     }
+      button = "";
+    }
+  }
+```
 
 ## Working Video
 
