@@ -139,7 +139,7 @@
   int j;
   ```
   
- 2.Initialize the modules in `void setup` function.
+ 2. Initialize the modules in `void setup` function.
  
  ```
  void setup() 
