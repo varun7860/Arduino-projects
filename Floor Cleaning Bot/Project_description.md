@@ -48,7 +48,7 @@ Note : I have used L298N in this project. you can use L293D if you want but let 
 
 ```
 #include<SoftwareSerial.h>
-SoftwareSerial Blue(TX,RX);
+SoftwareSerial Blue(TX,RX); // Instance of the defined library
 
 //Bluetooth Module Pins
 int TX=0;
@@ -72,6 +72,105 @@ for the robot/*
 //const int ENA=9; 
 //const int ENB=10;
 ```
+
+2. Initialize everything in `void setup` function.
+
+```
+void setup() 
+{
+  Serial.begin(9600);
+  
+  //set relay pins as output
+  pinMode(Rp1,OUTPUT);
+  pinMode(Rp2,OUTPUT);
+  
+  //Set motor pins as uutput
+  pinMode(M1,OUTPUT);
+  pinMode(M2,OUTPUT);
+  pinMode(M3,OUTPUT);
+  pinMode(M4,OUTPUT);
+  
+  //Make the relay pins as HIGH at start.
+  digitalWrite(Rp1,HIGH);
+  digitalWrite(Rp2,HIGH);
+  
+  //Set the PWM Pins as output
+  //pinMode(ENA,OUTPUT);
+  //pinMode(ENB,OUTPUT);
+}
+```
+
+3. Make the necessary functions which the robot will use while operating.
+
+```
+//This will allow robot to go forward.
+void forward()
+{
+  digitalWrite(M1,HIGH);
+  digitalWrite(M2,LOW);
+  digitalWrite(M3,LOW);
+  digitalWrite(M4,HIGH);
+}
+
+//This will allow robot to go backward or reverse.
+void backward()
+{
+  digitalWrite(M1,LOW);
+  digitalWrite(M2,HIGH);
+  digitalWrite(M3,HIGH);
+  digitalWrite(M4,LOW);
+}
+
+//This will allow robot to turn right.
+void right()
+{
+  digitalWrite(M1,HIGH);
+  digitalWrite(M2,LOW);
+  digitalWrite(M3,LOW);
+  digitalWrite(M4,LOW);
+}
+
+//This will allow robot to turn left.
+void left()
+{
+  digitalWrite(M1,LOW);
+  digitalWrite(M2,LOW);
+  digitalWrite(M3,LOW);
+  digitalWrite(M4,HIGH);
+}
+
+//This will stop the robot
+void pause()
+{
+  digitalWrite(M1,LOW);
+  digitalWrite(M2,LOW);
+  digitalWrite(M3,LOW);
+  digitalWrite(M4,LOW);
+  digitalWrite(Rp1,HIGH);
+  digitalWrite(Rp2,HIGH);
+}
+
+//This will make the robot to clean the floors
+void clean()
+{
+  <Put Your Logic here>
+}
+
+//Make an function that will make the robot to work autonomously.
+void Autonomous()
+
+{
+  forward();
+  clean();
+  forward();
+  clean();
+  forward();
+  clean();
+  
+}
+```
+
+4.
 
 ## Working Video
 
