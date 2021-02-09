@@ -44,6 +44,77 @@
 
 ## Code Explanation
 
+- Transmitter Code Explanation
+
+  1. Import the necessary libraries and define the pins
+  
+  ```
+  #include <RH_ASK.h> //Radio head ASK Library
+  #include <SPI.h>
+  #include <Wire.h>       //For communicate
+  #include <I2C.h>     //For communicate with MPU6050
+  #include <MPU6050.h>  //The main library of the MPU6050
+
+  RH_ASK rf_driver; 
+  MPU6050 mpu;       // Instance of MPU6050
+  int16_t ax, ay, az;
+  int16_t gx, gy, gz;
+
+  int X =0;  // variables  for storing  values of ax and ay
+
+  //variables for storing int values of ax and ay as string
+  String accel; 
+  String str_out;
+  ```
+  
+  2. Initialize the modules in `void setup` function.
+  
+  ```
+  void setup() 
+  {
+    // Initialize mpu-6050 and I2C Communication protocol.
+    mpu.initialize(); 
+    Wire.begin();
+    
+    // Make an instance of ASK.
+    rf_driver.init(); 
+    
+    // Set the serial monitor baud rate.
+    Serial.begin(9600); setting up Baud Rate as 9600
+  }
+  ```
+  
+  3. Get the Accelerometer in `X-Direction` value using `mpu.getMotion6()` function.
+  
+  ```
+  void loop() 
+  {
+   delay(100);
+   mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);  // get the values of ax, ay, az and gx, gy, gz
+
+   X = map(az, -17000, 17000, 300, 600);    //Send X axis data
+
+   ax =  X; //reset the ax value
+  ```
+
+  4. Convert the `Int` value to `String`
+  
+  ```
+  accel = String(ax); //int to String Conversion
+  str_out = accel; 
+  ```
+  
+  5. Send the data to `Receiver Arduino`
+  
+  ```
+  static char*msg = str_out.c_str();  // store it as msg
+
+  rf_driver.send((uint8_t*)msg,strlen(msg)); // function to send data
+  rf_driver.waitPacketSent();
+  delay(1000);
+ 
+  Serial.print("\n \r X:"); //Print the Values on Serial Monitor
+  Serial.print(String(ax));
+  ```
 
 ## Demonstration Video.
-
