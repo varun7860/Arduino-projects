@@ -27,6 +27,10 @@
 2. Google Firebase
 3. MIT App Inventor
 
+## MIT App Inventor Setup Steps
+
+## Google Firebase
+
 ## Implementation
 1. Node Mcu will act as interface between the control centre and citizen.
 2. When the user presses the button the his/her location as well as an email to all his/her family members and control centre will be sent. 
@@ -49,11 +53,11 @@ int flag = 0;
 int Timer=0; //Will be used to calculate time in seconds
 int acc_flag=0; 
 
-#define FIREBASE_HOST " "
-#define FIREBASE_AUTH "  "
-const char *ssid =  " ";     
-const char *pass =  " ";
-char server[] = "mail.smtp2go.com";
+#define FIREBASE_HOST " " //Put the HOST Key here
+#define FIREBASE_AUTH "  " // Put the Authentication Key here.
+const char *ssid =  " "; // Put your WiFi SSID here.     
+const char *pass =  " ";  //Put your WiFi Password here.
+char server[] = "mail.smtp2go.com"; //This is name of the server.
 WiFiClient client;
 WiFiClient espClient;
 
@@ -79,11 +83,13 @@ void setup()
   pinMode(buzzer,OUTPUT);
   pinMode(button,INPUT);
   digitalWrite(button,LOW);
+  
   ////////////////////////////////////GPS Module//////////////////////////////////////////////////
   ss.begin(GPSBaud);
   Serial.println(F("DeviceExample.ino"));
   Serial.println(F("A simple demonstration of TinyGPS++ with an attached GPS module"));
-  Serial.print(F("Testing TinyGPS++ library v. ")); Serial.println(TinyGPSPlus::libraryVersion());
+  Serial.print(F("Testing TinyGPS++ library v. ")); 
+  Serial.println(TinyGPSPlus::libraryVersion());
   Serial.println(F("by Mikal Hart"));
   Serial.println();
   delay(10);
@@ -105,11 +111,6 @@ void setup()
       Serial.println(WiFi.localIP());
 /////////////////////////////////////////End/////////////////////////////////////////////////////////
 
-///////////////////////Firebase Setup////////////////////////////
- Firebase.begin(FIREBASE_HOST,FIREBASE_AUTH);
-
-/////////////////////////End////////////////////////////////////
-
 /////////////////////////GSM Module Setup///////////////////////
   Serial.println("Initializing..."); 
   delay(1000);
@@ -118,6 +119,8 @@ void setup()
   mySerial.println("AT+CMGF=1"); // Configuring TEXT mode
   updateSerial();
 ///////////////////////////End////////////////////////////////////
+
+ Firebase.begin(FIREBASE_HOST,FIREBASE_AUTH); //Firebase Setup
 }
 ```
 
