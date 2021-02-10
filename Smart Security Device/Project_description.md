@@ -1,5 +1,5 @@
 # Smart Security Device
-<img src="https://github.com/varun7860/Arduino-projects/blob/master/Smart%20Security%20Device/Images/Smart%20Security%20Device.jpg" width="504" height="317"/>
+<img src="https://github.com/varun7860/Arduino-projects/blob/master/Smart%20Security%20Device/Images/Smart%20Security%20Device.jpg" width="312" height="555"/>
 
 ## Description
 - Citizens are already grappling with many urban challenges on a regular basis. Rapid urbanization is bringing along more challenges, including cities becoming more vulnerable to crime. Safety and security was a key issue raised in the Citizen Engagement survey. Crimes such as rape, theft, sexual assault is becoming very common in india nowadays. 
