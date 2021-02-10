@@ -356,5 +356,8 @@ void loop()
 
 ## Demonstration Video
 
-[![alt text][https://github.com/varun7860/Arduino-projects/blob/master/Smart%20Security%20Device/Images/Video%20Thumbnail.jpg]][https://youtu.be/ocBE0eq15g8]
+[![alt text][1]][2]
+
+[1]: https://github.com/varun7860/Arduino-projects/blob/master/Smart%20Security%20Device/Images/Video%20Thumbnail.jpg
+[2]: https://youtu.be/ocBE0eq15g8
 
