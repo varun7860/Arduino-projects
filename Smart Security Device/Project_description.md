@@ -48,6 +48,77 @@ int button_press=0; //This will detect button press
 int flag = 0;
 int Timer=0; //Will be used to calculate time in seconds
 int acc_flag=0; 
+
+#define FIREBASE_HOST " "
+#define FIREBASE_AUTH "  "
+const char *ssid =  " ";     
+const char *pass =  " ";
+char server[] = "mail.smtp2go.com";
+WiFiClient client;
+WiFiClient espClient;
+
+float Lat = 0;
+float Lon = 0;
+int firebase_button=0;
+
+static const int RXPin =5, TXPin = 4;
+static const uint32_t GPSBaud =9600;
+TinyGPSPlus gps;
+SoftwareSerial ss(RXPin, TXPin);
+
+SoftwareSerial mySerial(12,13);
+```
+
+2. Initialize everything in `void setup` Function.
+
+```
+void setup() 
+{
+  Serial.begin(9600);
+  mySerial.begin(9600);
+  pinMode(buzzer,OUTPUT);
+  pinMode(button,INPUT);
+  digitalWrite(button,LOW);
+  ////////////////////////////////////GPS Module//////////////////////////////////////////////////
+  ss.begin(GPSBaud);
+  Serial.println(F("DeviceExample.ino"));
+  Serial.println(F("A simple demonstration of TinyGPS++ with an attached GPS module"));
+  Serial.print(F("Testing TinyGPS++ library v. ")); Serial.println(TinyGPSPlus::libraryVersion());
+  Serial.println(F("by Mikal Hart"));
+  Serial.println();
+  delay(10);
+ ////////////////////////////////////////End/////////////////////////////////////////////////////// 
+
+ /////////////////////////////////////WiFi Connection//////////////////////////////////////////////
+ Serial.println("Connecting to ");
+       Serial.println(ssid); 
+ 
+       WiFi.begin(ssid, pass); 
+       while (WiFi.status() != WL_CONNECTED) 
+          {
+            delay(500);
+            Serial.print(".");
+          }
+      Serial.println("");
+      Serial.println("WiFi connected"); 
+      Serial.println("NodeMCU IP Address:  ");
+      Serial.println(WiFi.localIP());
+/////////////////////////////////////////End/////////////////////////////////////////////////////////
+
+///////////////////////Firebase Setup////////////////////////////
+ Firebase.begin(FIREBASE_HOST,FIREBASE_AUTH);
+
+/////////////////////////End////////////////////////////////////
+
+/////////////////////////GSM Module Setup///////////////////////
+  Serial.println("Initializing..."); 
+  delay(1000);
+  mySerial.println("AT"); //Once the handshake test is successful, it will back to OK
+  updateSerial();
+  mySerial.println("AT+CMGF=1"); // Configuring TEXT mode
+  updateSerial();
+///////////////////////////End////////////////////////////////////
+}
 ```
 
 ## Demonstration Video
