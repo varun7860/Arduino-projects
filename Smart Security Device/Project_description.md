@@ -35,5 +35,20 @@
 
 ## Code Explanation
 
+1. Include the necessary libraries and define the pins
+```
+#include <TinyGPS++.h> //GPS Module Library
+#include <SoftwareSerial.h> //This library will be used for GSM Module
+#include <FirebaseArduino.h> // Google Firebase Library
+#include <ESP8266WiFi.h> //Wifi Library for Node Mcu
+
+int buzzer =14; // buzzer pin
+const int button=16; //button pin
+int button_press=0; //This will detect button press
+int flag = 0;
+int Timer=0; //Will be used to calculate time in seconds
+int acc_flag=0; 
+```
+
 ## Demonstration Video
 
