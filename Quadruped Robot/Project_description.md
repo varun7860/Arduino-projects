@@ -67,3 +67,8 @@ when it is walking it has options : it can maintain passive stability while walk
 ## Code Explanation
 
 ## Demonstration Video
+
+[![alt text][1]][2]
+
+[1]: https://github.com/varun7860/Arduino-projects/blob/master/Quadruped%20Robot/Images/Output%20Video.jpg
+[2]: https://youtu.be/-mtmB8SGPz0
