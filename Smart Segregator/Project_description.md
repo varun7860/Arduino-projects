@@ -73,5 +73,5 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
 
 [![alt text][1]][2]
 
-[1]:
+[1]: https://github.com/varun7860/Arduino-projects/blob/master/Smart%20Segregator/Images/Output%20Video.jpg
 [2]: https://youtu.be/CMIy7llAGi4
