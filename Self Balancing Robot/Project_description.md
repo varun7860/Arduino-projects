@@ -284,7 +284,7 @@ void loop()
 
 ## Working Video
 
+[![alt text][1]][2]
 
-
-[1]: 
+[1]: https://github.com/varun7860/Arduino-projects/blob/master/Self%20Balancing%20Robot/Images/Output%20Video.jpg
 [2]: https://youtu.be/nb_hnOeazkE
