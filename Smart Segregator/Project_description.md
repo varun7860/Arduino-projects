@@ -70,3 +70,8 @@ yes its true that moisture can classify wet waste. but it cannot classify dry wa
 
 
 ## Working Video
+
+[![alt text][1]][2]
+
+[1]:
+[2]: https://youtu.be/CMIy7llAGi4
