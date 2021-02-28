@@ -1,61 +1,83 @@
 #include <Servo.h>
 
-Servo servo;
-int servoPin = 7;
+class Smart_Segregator
+{
+  public:
+     int servo_pin;
+     int moisture_sensor_pin;
+     int touch_sensor_pin;
+     int detect_moisture;
+     int detect_touch;
+ 
+     Servo servo;
 
-int trigPin = 5;
-int echoPin = 6;
+     Smart_Segregator(int servo, int moisture, int touch)
+     {
+       servo_pin = servo;
+       moisture_sensor_pin = moisture;
+       touch_sensor_pin = touch;
 
+       detect_moisture = 0;
+       detect_touch = false;
+     }
 
-int ledPin = 10;
-long duration, dist, average;
-long aver[3];
+    void init()
+    {
+      Serial.begin(9600);
+      servo.attach(servo_pin);
+      servo.write(90);
+      
+      pinMode(moisture_sensor_pin, INPUT);
+      pinMode(touch_sensor_pin, INPUT);
 
+      Serial.println("Your Smart Segregator is ready to Segregate!");
+    }
+
+    void dry_waste()
+    {
+      servo.write(0);
+    }
+
+    void wet_waste()
+    {
+      servo.write(180);
+    }
+
+    void neutral_state()
+    {
+      servo.write(90);
+    }
+    
+    void execute()
+    {
+      detect_moisture = digitalRead(moisture_sensor_pin);
+      detect_touch = digitalRead(touch_sensor_pin);
+
+      if (detect_moisture > 85 && detect_touch == true)
+      {
+        wet_waste();
+      }
+
+      else if (detect_moisture <= 85 && detect_touch == true)
+      {
+        dry_waste();
+      }
+
+      else 
+      {
+        neutral_state();
+      }
+    }
+}
+
+segregator = Smart_Segregator(8,6,2);
 
 void setup() 
 {
-  Serial.begin(9600);
-  servo.attach(servoPin);
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-  servo.write(0);
-  delay(100);
-  servo.detach();
+  segregator.init();
 }
- void measure()
- {
-  digitalWrite(10, HIGH);
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(15);
-  digitalWrite(trigPin, LOW);
-  pinMode(echoPin, INPUT);
-  duration = pulseIn(echoPin, HIGH);
-  dist = (duration/2) /29.1; //obtaining distance
- }
 
 void loop() 
 {
-  for(int i=0;i<=2;i++) //average distance
-  {
-    measure();
-    aver[i]= dist;
-    delay(10); //delay between measurements
-  }
-   dist = (aver[0]+aver[1]+aver[2])/3;
-
-if (dist<50) //can change distance as per our need
-{
-  servo.attach(servoPin);
-  delay(1);
-  servo.write(0);
-  delay(3000);
-  servo.write(150);
-  delay(1000);
-  servo.detach();
-}
-
-Serial.print(dist);
-
+ segregator.execute();
 }
