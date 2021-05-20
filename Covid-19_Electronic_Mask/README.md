@@ -21,6 +21,7 @@ the capability of this project. New ideas are always welcomed:)
 
 ## Working
  <img align = "center" width = "" height = "" src = "">
+ 
 - Whenever the user makes a gesture the PAJ9760 captures those gestures and sends them in a form of unique signal 
   to arduino.
 - Based on gestures performed by the user ("UP" or "DOWN") the arduino sends the appropriate PWM signals to Servo 
