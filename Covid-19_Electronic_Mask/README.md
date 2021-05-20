@@ -5,11 +5,11 @@ This is a COVID'19 Mask which can be controlled by hand gestures.This mask can r
 face (making the mask go down).
 
 ## Hardware Used
-1. Arduino Pro Mini(x1): This will be brain of the device. It will be used to control all the parts of the device.
-2. Ice Cream Sticks(x12): Will be used for constructing chassis.
-3. Gesture Sensor(x1): Will be used to recognize gestures performed by the user.
-4. Servo Motors(x2): These will be used to move the mask up or down.
-5. Dumy spectacles as chassis(x1):This completely optional. You can use any custom chassis you want.
+1. `Arduino Pro Mini(x1)`: This will be brain of the device. It will be used to control all the parts of the device.
+2. `Ice Cream Sticks(x12)`: Will be used for constructing chassis.
+3. `Gesture Sensor(x1)`: Will be used to recognize gestures performed by the user.
+4. `Servo Motors(x2)`: These will be used to move the mask up or down.
+5. `Dumy spectacles as chassis(x1)`:This completely optional. You can use any custom chassis you want.
 
 ## Software Used
 <img align = "center" width = "" height = "" src = "">
