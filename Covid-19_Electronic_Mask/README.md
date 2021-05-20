@@ -1,5 +1,5 @@
 # COVID'19 Electronic Gesture Controlled Mask
-<img align = "center" width = "692" height = "711" src = "https://github.com/varun7860/Arduino-projects/blob/master/Covid-19_Electronic_Mask/Images/Mask%202.jpg">
+<img align = "center" width = "692" height = "711" src = "https://github.com/varun7860/Arduino-projects/blob/master/Covid-19_Electronic_Mask/Images/Mask_2.jpeg">
 This is a COVID'19 Mask which can be controlled by hand gestures.This mask can recognize two kinds of gestures which are 
 "UP" and "DOWN". UP gesture is used for covering up the face (making mask move up) and DOWN gesture is used to expose the 
 face (making the mask go down).
