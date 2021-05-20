@@ -1,5 +1,5 @@
 # COVID'19 Electronic Gesture Controlled Mask
-<>
+<img align = "center" width = "" height = "" src = "">
 This is a COVID'19 Mask which can be controlled by hand gestures.This mask can recognize two kinds of gestures which are 
 "UP" and "DOWN". UP gesture is used for covering up the face (making mask move up) and DOWN gesture is used to expose the 
 face (making the mask go down).
@@ -12,12 +12,15 @@ face (making the mask go down).
 5. Dumy spectacles as chassis(x1):This completely optional. You can use any custom chassis you want.
 
 ## Software Used
+<img align = "center" width = "" height = "" src = "">
 Only one software which is Arduino IDE is used in this project. If you want you can use additional softwares to expand
 the capability of this project. New ideas are always welcomed:)
 
 ## Interfacing Diagram
+<img align = "center" width = "" height = "" src = "">
 
 ## Working
+ <img align = "center" width = "" height = "" src = "">
 - Whenever the user makes a gesture the PAJ9760 captures those gestures and sends them in a form of unique signal 
   to arduino.
 - Based on gestures performed by the user ("UP" or "DOWN") the arduino sends the appropriate PWM signals to Servo 
@@ -25,6 +28,7 @@ the capability of this project. New ideas are always welcomed:)
 - The result is the movement of mask going up or down.
 
 ## Learning Modules
+<img align = "center" width = "" height = "" src = "">
 These are some of the learning modules you will need to get grasp of before doing this project.
 
 1. Object Oriented C++ Programming(Optional : You can use structured programming as well but I recommend OOP anytime.)
@@ -32,3 +36,4 @@ These are some of the learning modules you will need to get grasp of before doin
 3. Arduino.
 
 ## Device in Action (Working Video)
+
