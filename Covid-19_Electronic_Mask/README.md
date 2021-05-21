@@ -19,6 +19,8 @@ the capability of this project. New ideas are always welcomed:)
 ## Interfacing Diagram
 <img align = "center" width = "" height = "" src = "">
 
+will soon add this.....
+
 ## Working
  <img align = "center" width = "" height = "" src = "">
  
