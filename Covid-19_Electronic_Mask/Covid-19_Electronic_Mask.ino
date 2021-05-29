@@ -30,10 +30,10 @@ class Electronic_Mask
   |       - Attaches the servo to the PWM pin.
   |
   | turn_up()
-  |       - Turns on the servo motor.
+  |       - Turns on the mask motors.
   |
   | turn_down()
-  |       - Detaches servo motor and turns it off.
+  |       - Detaches motors of the mask.
   |
   | turn_off()
   |       - Turns off the mask.
