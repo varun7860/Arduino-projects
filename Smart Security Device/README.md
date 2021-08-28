@@ -32,8 +32,6 @@
 
 ## Google Firebase
 
-## Interfacing and Making Custom PCB
-
 ## Implementation
 1. Node Mcu will act as interface between the control centre and citizen.
 2. When the user presses the button the his/her location as well as an email to all his/her family members and control centre will be sent. 
